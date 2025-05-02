@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog Preview Card</title>
+
+  <!-- Local Figtree font (variable + static fallbacks) -->
+  <style>
+    @font-face {
+      font-family: 'Figtree';
+      src: url('./fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+      font-weight: 100 900;
+    }
+    @font-face {
+      font-family: 'Figtree';
+      src: url('./fonts/Figtree-Medium.ttf') format('truetype');
+      font-weight: 500;
+    }
+    @font-face {
+      font-family: 'Figtree';
+      src: url('./fonts/Figtree-ExtraBold.ttf') format('truetype');
+      font-weight: 800;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./styles/variables.css">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <div class="card">
+    <div class="card__image">
+      <img src="./assets/illustration-article.svg" alt="Blog cover image">
+    </div>
+
+    <div class="card__content">
+      <span class="card__category">Learning</span>
+      <time class="card__date" datetime="2023-12-21">
+        Published 21 Dec 2023
+      </time>
+      <h1 class="card__title">
+        <a href="#" class="card__link">HTML &amp; CSS foundations</a>
+      </h1>
+      <p class="card__description">
+        These languages are the backbone of every website,
+        defining structure, content, and presentation.
+      </p>
+
+      <div class="card__author">
+        <img src="./assets/image-avatar.webp" alt="Author avatar" class="card__avatar">
+        <span class="card__author-name">Greg Hooper</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

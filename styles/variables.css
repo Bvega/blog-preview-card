@@ -1,0 +1,16 @@
+:root {
+  /* Colors */
+  --clr-yellow: hsl(47, 88%, 63%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-gray-500: hsl(0, 0%, 42%);
+  --clr-gray-950: hsl(0, 0%, 7%);
+
+  /* Typography */
+  --ff-primary: 'Figtree', sans-serif;
+  --fs-body: 16px;
+  --fw-medium: 500;
+  --fw-bold: 800;
+
+  /* Breakpoint */
+  --bp-desktop: 768px;
+}
