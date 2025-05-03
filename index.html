@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Blog Preview Card</title>
 
-  <!-- Local Figtree font (variable + static fallbacks) -->
+  <!-- Local Figtree font -->
   <style>
     @font-face {
       font-family: 'Figtree';
@@ -24,33 +24,103 @@
     }
   </style>
 
-  <link rel="stylesheet" href="./styles/variables.css">
-  <link rel="stylesheet" href="./styles/main.css">
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
 </head>
-<body>
-  <div class="card">
-    <div class="card__image">
-      <img src="./assets/illustration-article.svg" alt="Blog cover image">
+<body
+  class="d-flex justify-content-center align-items-center min-vh-100"
+  style="background-color: hsl(47,88%,63%); font-family: 'Figtree', sans-serif;"
+>
+  <div
+    class="card"
+    style="
+      max-width: 384px;
+      width: 100%;
+      height: 522px;
+      padding: 24px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 8px 8px 0 hsl(0,0%,7%);
+      overflow: hidden;
+    "
+  >
+    <!-- Cover Image -->
+    <div
+      style="
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 1rem;
+      "
+    >
+      <img
+        src="./assets/illustration-article.svg"
+        alt="Blog cover image"
+        class="img-fluid w-100 h-100"
+        style="object-fit: cover;"
+      />
     </div>
 
-    <div class="card__content">
-      <span class="card__category">Learning</span>
-      <time class="card__date" datetime="2023-12-21">
-        Published 21 Dec 2023
-      </time>
-      <h1 class="card__title">
-        <a href="#" class="card__link">HTML &amp; CSS foundations</a>
+    <!-- Content -->
+    <div class="d-flex flex-column gap-2">
+      <!-- Category Badge -->
+      <span
+        class="badge"
+        style="
+          background-color: hsl(47,88%,63%);
+          color: hsl(0,0%,7%);
+          font-weight: 500;
+          font-size: 0.875rem;
+          padding: 0.25rem 0.5rem;
+          border-radius: 4px;
+        "
+        >Learning</span
+      >
+
+      <!-- Date -->
+      <time
+        style="font-size: 0.875rem; color: hsl(0,0%,7%);"
+        datetime="2023-12-21"
+        >Published 21 Dec 2023</time
+      >
+
+      <!-- Title -->
+      <h1 class="h5 mt-2 mb-0">
+        <a
+          href="#"
+          class="text-decoration-none"
+          style="color: hsl(0,0%,7%); font-weight: 800;"
+          >HTML &amp; CSS foundations</a
+        >
       </h1>
-      <p class="card__description">
-        These languages are the backbone of every website,
-        defining structure, content, and presentation.
+
+      <!-- Description -->
+      <p style="font-size: 1rem; line-height: 1.5; color: hsl(0,0%,42%);">
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
       </p>
 
-      <div class="card__author">
-        <img src="./assets/image-avatar.webp" alt="Author avatar" class="card__avatar">
-        <span class="card__author-name">Greg Hooper</span>
+      <!-- Author -->
+      <div class="d-flex align-items-center gap-2 mt-auto">
+        <img
+          src="./assets/image-avatar.webp"
+          alt="Author avatar"
+          class="rounded-circle"
+          width="32"
+          height="32"
+        />
+        <span style="font-weight: 500; color: hsl(0,0%,7%);"
+          >Greg Hooper</span
+        >
       </div>
     </div>
   </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
